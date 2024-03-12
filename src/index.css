@@ -1,13 +1,253 @@
-body {
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body- {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Montserrat";
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#home {
+  position: static;
+  /* height: 100vh ; */
+  /* text-align: center; */
+  background:
+    /* top, transparent black, faked with gradient */
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
+    /* bottom, image */
+    url(https://wallpapers.com/images/hd/dark-gradient-rpa97mj9dhic8raf.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .nav-scroller {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.fa-solid{
+  cursor: pointer;
+} */
+
+
+
+.login {
+  color: rgb(99, 197, 210);
+}
+
+ .flip-card {
+  font-family: "Lobster";
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+
+.imag {
+  width: 18rem;
+  color:white
+}
+
+.cursor {
+  mix-blend-mode: difference;
+}
+
+.ab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: gray;
+}
+
+.wrapper {
+  display: inline-flex;
+}
+
+.static {
+  font-size: 3rem;
+  font-weight: 400;
+  color: aliceblue;
+}
+
+.dyanmic {
+  margin-left: 1rem;
+}
+
+.wrapper .dynamic li {
+  list-style-type: none;
+  font-size: 2.8rem;
+}
+
+.wrapper .dynamic li span {
+  position: relative;
+}
+
+.dynamic li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: auto;
+  background: gray;
+  overflow-x: hidden;
+  border-left: 2px solid black;
+  animation: typing 2s steps(30) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0px -35px 0px 35px;
+  }
+}
+
+.card-file {
+  position: relative;
+}
+
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+.thecard {
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.front {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back {
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.fa-star,
+.fa-star-half-stroke {
+  color: rgb(237, 203, 9);
+}
+
+.img3 {
+  border-radius: 2px;
+}
+
+.img2 {
+  filter: contrast(1.75);
+}
+
+.about {
+  position: static;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
+    url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=600);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product {
+  position: static;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
+    url(https://images.pexels.com/photos/357743/pexels-photo-357743.jpeg?cs=srgb&dl=pexels-pixabay-357743.jpg&fm=jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.a-heading {
+  text-shadow: 1px 1px 2px #f8f8f8;
+}
+
+.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+/* .footer1 {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
+    url(https://e0.pxfuel.com/wallpapers/696/921/desktop-wallpaper-colorful-dark-aesthetic-gradient-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+.footer {
+  background: linear-gradient(315deg, #ffffff, #d7e1ec)
+}
+
+/* .contact-bg {
+  background:linear-gradient(315deg,#ffffff,#d7e1ec)
+
+} */
+/* .contact-bg {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
+    url(https://c0.wallpaperflare.com/preview/1013/721/141/contact-details-smartphone-business-contact-us.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+.contact {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
+    url(https://media.istockphoto.com/id/1441262452/photo/communication-and-technology-concept-hand-putting-wooden-block-cube-symbol-telephone-email.webp?b=1&s=170667a&w=0&k=20&c=FtxQlZeGn__5ZHpc5zi9tx0GVTDZuZQoQcHT7mxDY4Q=);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.fa-phone {
+  color: rgb(0, 7, 8);
+}
+
+.fa-whatsapp {
+  color: green;
+}
+
+.fa-envelope {
+  color: rgb(58, 130, 186);
+}
+
+/* .about{
+  background:;
+} */
+
+.about-img{
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.foot-bar{
+  background-color: rgb(62, 58, 58);
+}
+.form-inp{
+  background: blanchedalmond;
+  height: 4rem;
+}
+.form-msg{
+  height: 8rem;
 }
